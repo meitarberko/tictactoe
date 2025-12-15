@@ -22,28 +22,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button android:id="@+id/btn0" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
-        <Button android:id="@+id/btn1" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
-        <Button android:id="@+id/btn2" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
+        <Button android:id="@+id/btn0" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
+        <Button android:id="@+id/btn1" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
+        <Button android:id="@+id/btn2" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button android:id="@+id/btn3" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
-        <Button android:id="@+id/btn4" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
-        <Button android:id="@+id/btn5" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
+        <Button android:id="@+id/btn3" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
+        <Button android:id="@+id/btn4" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
+        <Button android:id="@+id/btn5" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button android:id="@+id/btn6" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
-        <Button android:id="@+id/btn7" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
-        <Button android:id="@+id/btn8" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp"/>
+        <Button android:id="@+id/btn6" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
+        <Button android:id="@+id/btn7" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
+        <Button android:id="@+id/btn8" android:layout_width="80dp" android:layout_height="80dp" android:textSize="40sp" android:layout_margin="5dp" android:backgroundTint="#F06292"/>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hadar and Meitar's Tic Tac Toe"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:textColor="#555555"/>
 
     <Button
         android:id="@+id/btnReset"
@@ -51,7 +60,7 @@
         android:layout_height="wrap_content"
         android:text="Play Again"
         android:textSize="20sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#2196F3"/>
 
 </LinearLayout>
