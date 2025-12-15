@@ -81,9 +81,39 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun checkForWin() {
+        var winner = 0
+
+        for (pos in winningPositions) {
+            if (gameState[pos[0]] == gameState[pos[1]] &&
+                gameState[pos[1]] == gameState[pos[2]] &&
+                gameState[pos[0]] != 0) {
+
+                winner = gameState[pos[0]]
+                isGameActive = false
+            }
+        }
+
+        if (winner != 0) {
+            val winnerSign = if (winner == 1) "X" else "O"
+            statusText.text = "$winnerSign Wins!"
+            return
+        }
+
+        val isDraw = !gameState.contains(0)
+        if (isDraw) {
+            statusText.text = "It's a Draw!"
+            isGameActive = false
+        }
     }
 
     private fun resetGame() {
+        gameState = IntArray(9) { 0 }
+        currentPlayer = 1
+        isGameActive = true
+        statusText.text = "Turn: X"
 
+        for (btn in buttons) {
+            btn.text = ""
+        }
     }
 }
